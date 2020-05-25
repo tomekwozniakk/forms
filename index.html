@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1>Zabawa w formularze</h1>
+        <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
+            <p>
+                <label for="name">Twoje imię:</label>
+                <input 
+                class="form__item" 
+                id="name" 
+                name="name" 
+                type="text" 
+                placeholder="Wpisz swoje imię...">
+            </p>
+            <p>
+                <label>Twoje nazwisko:
+                    <input 
+                    class="form__item" 
+                    id="lastName" 
+                    name="lastName" 
+                    type="text"
+                    placeholder="Wpisz swoje nazwisko...">
+                </label>
+            </p>
+            <p>
+                <label>Telefon:
+                    <input 
+                    class="form__item" 
+                    id="phoneNumber" 
+                    name="phoneNumber" 
+                    type="tel"
+                    placeholder="Wpisz swój nr telefonu...">
+                </label>
+            </p>
+            <p>
+                <label>E-mail:
+                    <input 
+                    class="form__item" 
+                    id="email" 
+                    name="email" 
+                    type="email"
+                    placeholder="Wpisz swój adres email...">
+                </label>
+            </p>
+            <p>
+                <label>Zakres:
+                    <input 
+                    class="form__item" 
+                    id="range" 
+                    name="range" 
+                    type="range" 
+                    min="0" 
+                    max="200" 
+                    step="2">
+                </label>
+            </p>
+            <p>
+                <label for="instrument">Wybierz swój instrument:</label>
+                    <select name="instrument" id="instrument">
+                        <option value="">Gitara</option>
+                        <option value="">Tamburyn</option>
+                        <option value="">Grzebień</option>
+                    </select>
+                
+            </p>
+            <p>
+                <label class="textarea__label" for="problemDescription">Opisz problem:</label>
+                    <textarea name="problemDescription" id="problemDescription" placeholder="Twój problem..."></textarea>
+            </p>
+            <p>
+                <label>Hasło:
+                    <input 
+                    class="form__item" 
+                    id="password" 
+                    name="password" 
+                    type="password"
+                    placeholder="Wpisz swoje hasło...">
+                </label>
+            </p>
+            <p>
+                <label>Ikona:
+                    <input 
+                    class="form__item" 
+                    id="icon" 
+                    name="icon" 
+                    type="file">
+                </label>
+            </p>
+            <fieldset>
+                <legend>Adres:</legend>
+                <p>
+                    <label>Ulica:
+                        <input 
+                        class="form__item" 
+                        id="streetName" 
+                        name="streetName" 
+                        type="text" 
+                        placeholder="Wpisz ulicę i nr domu...">
+                    </label>
+                </p>
+                <p>
+                    <label>Kod pocztowy:
+                        <input 
+                        class="form__item" 
+                        id="postalCode" 
+                        name="postalCode" 
+                        type="number" 
+                        placeholder="Wpisz kod pocztowy...">
+                    </label>
+                </p>
+                <p>
+                    <label>Miasto:
+                        <input 
+                        class="form__item" 
+                        id="city" 
+                        name="city" 
+                        type="text" 
+                        placeholder="Wpisz swoje miasto...">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Ulubiona potrawa :</legend>
+                <p>
+                    <label><input 
+                        name="dish" 
+                        type="radio" 
+                        value="bigos">Bigos</label>
+                </p>
+                <p>
+                    <label><input 
+                        name="dish" 
+                        type="radio" 
+                        value="pierogi">Pierogi</label>
+                </p>
+                <p>
+                    <label><input 
+                        name="dish" 
+                        type="radio" 
+                        value="mielone">Mielone</label>
+                </p>
+            </fieldset>
+            <p>
+                <label><input 
+                    name="agreement" 
+                    type="checkbox">I agree</label>
+            </p>
+            <p>
+                <input type="submit" value="Wyślij">
+            </p>
+        </form>
+        <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
+        <p>
+            <label for="name">Imię:
+                <input class="form__item" name="name" id="name" type="text">
+            </label>
+        </p>
+        <!-- <p>
+            <label for="riddle">Riddle:
+                <input class="form__item" name="riddle" id="riddle" type="text">
+            </label>
+        </p> -->
+        <p>
+            <input type="submit" value="Wyślij">
+        </p>
+        
+        </form>
+
+    </main>
+</body>
+
+</html>
